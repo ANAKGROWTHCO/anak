@@ -918,3 +918,41 @@ blockquote {
   font-size: 1rem;
   color: #374151;
 }
+
+.cta-section {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f8f9fa;
+}
+
+.cta-btn {
+  background-color: #990f02;
+  color: #fff;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d0312d;
+  color: #fff;
+}
