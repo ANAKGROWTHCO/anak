@@ -67,27 +67,94 @@
 
 
 <!-- SERVICES SECTION -->
-<section class="services" id="services">
-  <div class="services-wrapper">
+   <section class="services" id="services">
+  <div class="container">
     <h2 class="section-title">Our Services</h2>
-
     <div class="services-grid">
-      <div class="service-card">
-        <h3>Brand Strategy</h3>
-        <p>We build solid brand foundations through identity, messaging, and positioning strategies.</p>
+      <div class="service-box">
+        <i class="fas fa-search"></i>
+        <h3>SEO</h3>
       </div>
-      <div class="service-card">
-        <h3>Social Media Management</h3>
-        <p>Grow and engage your audience with tailored social media campaigns and content calendars.</p>
+      <div class="service-box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>SMM</h3>
       </div>
-      <div class="service-card">
-        <h3>Search Engine Optimization</h3>
-        <p>Improve your visibility on search engines with on-page and off-page SEO techniques.</p>
+      <div class="service-box">
+        <i class="fas fa-pen-nib"></i>
+        <h3>Content Marketing</h3>
       </div>
-      <div class="service-card">
-        <h3>Paid Advertising</h3>
-        <p>Maximize ROI with data-driven Google Ads, Meta Ads, and campaign optimization.</p>
+      <div class="service-box">
+        <i class="fas fa-envelope"></i>
+        <h3>Email Marketing</h3>
       </div>
+      <div class="service-box">
+        <i class="fas fa-mouse-pointer"></i>
+        <h3>PPC</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-ad"></i>
+        <h3>Advertising</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-code"></i>
+        <h3>Web Design & Dev</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-star"></i>
+        <h3>Reputation Mgmt</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-photo-video"></i>
+        <h3>Media Marketing</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Marketing</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-chart-line"></i>
+        <h3>CRO</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Analytics & Reporting</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-handshake"></i>
+        <h3>Affiliate Marketing</h3>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-user-astronaut"></i>
+        <h3>Influencer Marketing</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What services do you offer?</button>
+      <div class="faq-answer">We provide SEO, SMM, Content Marketing, Email Marketing, PPC, and more.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you work with small businesses?</button>
+      <div class="faq-answer">Yes! We work with startups, small businesses, and large enterprises alike.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How soon can I see results?</button>
+      <div class="faq-answer">It depends on the service, but most clients see improvements within 30-90 days.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How can I contact your team?</button>
+      <div class="faq-answer">You can reach out via our contact form, email, or schedule a call.</div>
     </div>
   </div>
 </section>
@@ -400,6 +467,15 @@
 
 
 
+<script>
+  const faqs = document.querySelectorAll('.faq-question');
+  faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+      const answer = faq.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
 
 
 
@@ -410,6 +486,8 @@
     nav.classList.toggle('active');
   }
 </script>
+
+
 
 </body>
 </html>
